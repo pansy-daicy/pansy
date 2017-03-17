@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <title></title>
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+     <link rel="stylesheet" href="css/swiper.min.css">
+    <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+
+
+    <!-- 调用插件方法-->
+    <script type="text/javascript">
+        $(function(){
+            $('#Demo').fullpage({
+              afterLoad:function(anchorLink,index){
+                $('.section').removeClass('animation');
+                  setTimeout(function(){
+                      $('.section').eq(index-1).addClass('animation');
+                  },10);
+              }
+            });
+        })
+    </script>
+    <style>
+    body {
+        background: #fff;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+
+    }
+    </style>
+</head>
+<body>
+<div id="Demo">
+    <!-- first-->
+    <div class="section one" id="Pansy">
+     <div class="container" >
+       <div class="resume">
+                <p>个人简历</p>
+       </div>
+            <div class="box">
+                  <div class="item"><p>前端工程师-李盈平</p><br></div>
+                  <div class="item"><p>Angular</p></div>
+                  <div class="item"><p>Ajax</p></div>
+                  <div class="item"><p>Bootstrap</p></div>
+                     <div class="item"><p>Welcome!</p></div>
+                    <div class="item"><p>jQueary</p></div>
+                </div>   
+        </div>
+    </div>
+    <!-- second-->
+    <div class="section two" id="Self-introduction">
+        <div class="container">
+           <div class="animated infinite data">
+                <h1>基本资料</h1>
+            </div>
+
+           <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12 on">
+                     <div class="glyphicon glyphicon-tags name"></div>
+                     <div class="li">李盈平</div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 out">
+                    <div class="glyphicon glyphicon-envelope e-mail"></div>
+                    <div class="qq">330246145@qq.com</div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 top">
+                    <div class="glyphicon glyphicon-phone-alt tell"></div>
+                    <div class="phone">13816694131</div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 bottom">
+                    <div class="glyphicon glyphicon-book book"></div>
+                    <div class="hua">华北水利水电大学</div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+        <!-- third-->
+    <div class="section three" id="Professional">
+        <div class="container">
+          <h1>专业技能</h1>
+                <div class="rol">
+                    <div class="col-md-12 col-sm-6 web">
+                <ul id="ski" class="skill">
+                    <li> DIV+CSS页面布局，精准还原设计图</li>
+                    <li>熟练JavaScript，作用域链，原型链，闭包的使用</li>
+                    <li>熟练jQuery，快速高效的实现页面功能</li>
+                    
+                </ul>
+                
+                    </div>
+                </div>
+                <div class="rol">
+                    <div class="col-md-12 col-sm-6 pc">
+                <ul class="skill">
+                    
+                    <li>熟悉html5，CSS3，运用bootstrap开发移动端实现响应式页面</li>
+                    <li>熟练Ajax技术和后台进行数据交互，使用jsonp进行跨域请求</li>
+                    <li>熟练artTemplate等模板引擎实现项目功能</li>
+                    
+                </ul>
+               
+                    </div>
+                </div>
+                <div class="rol">
+                    <div class="col-md-12 col-sm-6 app">
+                <ul class="skill">
+                    
+                    <li>熟练掌握swiper，layer，fullPage等插件的使用</li>
+                    <li>熟悉Seajs，requirejs进行模块化开发</li>
+                    <li>熟练掌握rem, rlex 进行页面布局</li>
+                    
+                </ul>
+               </div>
+                </div>
+                <div class="rol">
+                    <div class="col-md-12 col-sm-6 webapp">
+                <ul class="skill">
+                    <li>了解AngularJS等主流框架的使用，了解模块化编程思想</li>
+                    <li>了解node.js</li>
+                </ul>
+                </div>
+            </div>
+         </div>
+    </div>
+        <!-- fourth-->
+    <div class="section four" id="Work show">
+        <div class="container">
+         <h1>项目经验</h1>
+          <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(images/shanxiang.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/shanxiang1.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/shanxiang2.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/youliao.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/youliao1.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/youliao2.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/youliao3.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/yizhiming.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/yizhiming3.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/yizhiming2.jpg)"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+    </div>
+        <!-- fifth-->
+    <div class="section five" id="Self-assessment">
+           <div class="container">
+                <h1 id="topp" class='animated infinite bounce  ' >自我评价</h1>
+                <ul>
+                    <li class="animated infinite shake ">性格开朗活泼，有很强大的集体团队合作意识</li>
+                    <li class="animated infinite shake ">热衷于研究新知识，善于归纳总结</li>
+                    <li class="animated infinite shake ">具有亲和力，平易近人</li>
+                </ul>
+           </div>
+    </div>
+</div>
+<!--top-->
+ <nav class="navbar my_nav navbar-default" >
+                <div id="navbar-header" class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#Pansy">Pansy</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                       <li><a href="#Self-introduction">Self-introduction</a></li>
+                       <li><a href="#Professional">Professional skill</a></li>
+                       <li><a href="#Work show">Works show</a></li>
+                       <li><a href="#Self-assessment">Self-assessment</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflow: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true
+        }
+    });
+    </script>
+</body>
+</html>
